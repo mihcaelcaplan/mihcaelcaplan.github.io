@@ -1,30 +1,46 @@
-<!DOCTYPE html>
+---
+title: splash
+---
 <html>
-	<head>
-    <!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="/css/main.css">
-		<title>Hank Quinlan, Horrible Cop</title>
-	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>Hi there, I'm Hank Quinlan!</h1>
-				<p>I'm best known as the horrible cop from <em>A Touch of Evil</em> Don't trust me. <a href="/about">Read more about my life...</a></p>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="mailto:hankquinlanhub@gmail.com">email</a></li>
-        		<li><a href="https://github.com/hankquinlan">github.com/hankquinlan</a></li>
-			</ul>
-		</footer>
-	</body>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/assets/css/main.css"/>
+    <title>{{page.title}}</title>
+  </head>
+  <body>
+    <!-- titles -->
+    <h1>Michael Caplan</h1>
+      <div class=indent_container>
+
+        <h2>Brown University 2019, Computer Engineering (A.B) & Philosophy (A.B)</h2>
+        <!-- set up the main projects body -->
+        <div class=project_container>
+
+          <!-- use liquid to loop through first 3 projects in projects data structure -->
+          {% for project in site.data.projects %}
+            {% if forloop.index  < 4%}
+              {% capture name %} {{ project.brief }} {% endcapture %}
+              {% capture image %} {{project.image}}{% endcapture %}
+              {% capture proj_url %} {{ project.url }} {% endcapture %}
+              {% include project_logo.html url=proj_url img=image caption=name %}
+            {% endif %}
+
+          {% endfor %}
+
+        </div>
+
+        <!-- adding the see more proj -->
+        <div class=see_bar>
+          <a href="/projects.html" class=see_link>
+              All Projects
+            <img class=back_button src="assets/images/back_button.png"/>
+
+          </a>
+
+        </div>
+
+        <!-- adding the bottom nav bar -->
+        {%include nav_bar.html%}
+    </div>
+  </body>
 </html>
