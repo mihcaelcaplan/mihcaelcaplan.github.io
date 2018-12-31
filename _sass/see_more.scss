@@ -1,0 +1,38 @@
+.see_bar{
+  // text-align: right;
+  font-size: 0.9em;
+  padding-left: 3vw;
+  padding-top: 3vw;
+  padding-right: 3vw;
+  display: flex;
+  flex-flow: row;
+}
+
+.see_link,{
+  text-decoration: none;
+  text-align: center ;
+  color: #303030;
+  background-color: rgba(#838383, .2);
+  border: #222;
+  border-radius: 3.5px;
+  width: 14vw;
+  font-size: 1.8vw;
+  height:4vh;
+  margin-left: 80%;
+  border: thin #C1C1C1 solid;
+}
+
+.see_link:active{
+  color: #D9EEF0;
+}
+
+.back_button{
+  max-width: 2vw;
+  max-height: 2vw;
+  -moz-transform: scaleX(-1);
+-o-transform: scaleX(-1);
+-webkit-transform: scaleX(-1);
+transform: scaleX(-1);
+filter: FlipH;
+-ms-filter: “FlipH”;
+}

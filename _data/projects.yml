@@ -1,0 +1,41 @@
+- name: Digital thermometer and adhoc heater control
+  category: engineering
+  brief: Heat Control
+  image: assets/images/thermometer.jpg
+  url: thermometer.html
+
+- name: Kalman filtering acceleration data to smoothe numerical double integration to dead-reckoning
+  category: engineering
+  brief: Accelerometer Filter
+  image: assets/images/accelerometer.png
+  url: accelerometer.html
+
+- name: Networked chemical sensors for classification
+  category: engineering
+  brief: Sensor Network
+  image: assets/images/sensors.png
+  url: sensors.html
+
+- name: Cross country trip on a rebuilt 1985 Honda Magna V45
+  category: misc
+  brief: Motorcycle Rebuild
+  image: assets/images/motorcycle.png
+  url: motorcycle.html
+
+- name: Philosophy of science - naming and qualities
+  category: philosophy
+  brief: John Locke Paper
+  image: assets/images/locke.png
+  url: locke.html
+
+- name: Simple ebb and flow hydroponics system
+  category: misc
+  brief: Hydroponics
+  image: assets/images/hydro.png
+  url: hydro.html
+
+- name: Discover - a Brown/RISD interdisciplinary project
+  category: misc
+  brief: Discover
+  image: assets/images/discover.png
+  url: discover.html
