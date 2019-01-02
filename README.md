@@ -1,4 +1,4 @@
-###Michael's Personal Website
+# Michael's Personal Website 
 This is the first real website I've ever spun up, even tho i've been dallying around with HTML since I was around 14 and first getting to know computers.
 
 I **hope** you enjoy!
