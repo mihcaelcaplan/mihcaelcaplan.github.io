@@ -34,8 +34,8 @@
   image: assets/images/hydro.png
   url: hydro.html
 
-- name: Discover - a Brown/RISD interdisciplinary project
-  category: misc
-  brief: Discover
-  image: assets/images/discover.png
-  url: discover.html
+- name: Justified true belief in the face of defeaters
+  category: philosophy
+  brief: Epistemology Paper
+  image: assets/images/epistemology.png
+  url: epistemology.html
