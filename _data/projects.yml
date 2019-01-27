@@ -1,9 +1,3 @@
-- name: Digital thermometer and adhoc heater control
-  category: engineering
-  brief: Heat Control
-  image: assets/images/thermometer.jpg
-  url: thermometer.html
-
 - name: Kalman filtering acceleration data to smoothe numerical double integration to dead-reckoning
   category: engineering
   brief: Accelerometer Filter
@@ -16,17 +10,24 @@
   image: assets/images/sensors.png
   url: sensors.html
 
-- name: Convolutional neural network for checkout item classification
-  category: engineering
-  brief: Neural Net
-  image: assets/images/classification.jpg
-  url: classification.html
-
 - name: Cross country trip on a rebuilt 1985 Honda Magna V45
   category: misc
   brief: Motorcycle Rebuild
   image: assets/images/motorcycle.jpg
   url: motorcycle.html
+
+
+- name: Digital thermometer and adhoc heater control
+  category: engineering
+  brief: Heat Control
+  image: assets/images/thermometer.jpg
+  url: thermometer.html
+
+- name: Convolutional neural network for checkout item classification
+  category: engineering
+  brief: Neural Net
+  image: assets/images/checkout.png
+  url: classification.html
 
 - name: Essence and contextualism
   category: philosophy
@@ -34,8 +35,8 @@
   image: assets/images/locke.jpg
   url: locke.html
 
-# - name: Simple ebb and flow hydroponics system
-#   category: misc
-#   brief: Hydroponics
-#   image: assets/images/hydro.png
-#   url: hydro.html
+- name: Discover Project
+  category: misc
+  brief: Discover
+  image: assets/images/discover.png
+  url: hydro.html

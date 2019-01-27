@@ -45,3 +45,9 @@ When communication was working well, I needed to wrap everything in an easy-to-u
 Because we were in a single producer-single consumer situation, there were minimal race conditions, so I was able to use a lockless queue. I borrowed a wonderful circular FIFO instantiation from Kjell Hedstrom. The source is [here](https://bitbucket.org/KjellKod/lock-free-wait-free-circularfifo/src) and a great explanation of how it uses std::atomic variables is [here](https://www.codeproject.com/Articles/43510/Lock-Free-Single-Producer-Single-Consumer-Circular).
 
 The std::thread library let me easily create a new thread (perks of being in C++), and I got the queue working.
+
+### Conclusions
+
+Our device worked much better than I thought it would, but it is not a surprise to anyone familiar with dead-reckoning techniques that our success was limited. The problem is gravity. The accelerometer works within the inertial frame of the earth, and thus there is a constant gravity vector pointing towards the core of the planet. Of course, with a perfectly aligned accelerometer, this offset could be calibrated. However, as soon as the device rotates the gravity vector projects onto our accelerometer x, y, and z vectors. We tried to solve this with a simple moving average, but ultimately we would have to implement some sort of rotation sensing and utilize euler angles to track and calibrate for the gravity vector. A great resource is [here](http://www.chrobotics.com/library/understanding-euler-angles).
+
+The full conclusions and all the code are in the github repository linked at the top. If you are interested, I suggest you read that. 

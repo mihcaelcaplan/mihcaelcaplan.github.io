@@ -4,8 +4,12 @@ layout: misc_header
 permalink: /about.html
 ---
 
-I'm Michael, an aspiring bird watcher and connoisseur of *vino* (that's the right way to say wine). I was born in a snowstorm, and I like to think you can see my origins in my rugged features.
+I'm Michael, I study engineering and philosophy. I love learning, building things, and going on adventures. This website is a sort of digital portfolio, a way for you to get to know some of the things that I have done and the skills that I have.
 
-I like working, and I want a job! (check out my [resume](/assets/resume.pdf)).
+I'm currently looking for a job! (check out my [resume](/assets/resume.pdf)).
 
-Call me @ 603-892-1038 if u think I'm **cute**.
+Please contact me if you think that's the right thing to do! I like talking to people, and I'd love to hear about what you are up to:
+
+[michael_caplan@brown.edu](mailto:michael_caplan@brown.edu)
+
+603-892-0138
