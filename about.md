@@ -8,7 +8,7 @@ I'm Michael, I study engineering and philosophy. I love learning, building thing
 
 I'm currently looking for a job! (check out my [resume](/assets/resume.pdf)).
 
-Please contact me if you think that's the right thing to do! I like talking to people, and I'd love to hear about what you are up to:
+Please contact me if you want to chat about anything! I love talking to people, and I'd love to hear about what you are up to:
 
 [michael_caplan@brown.edu](mailto:michael_caplan@brown.edu)
 

@@ -35,8 +35,14 @@
   image: assets/images/locke.jpg
   url: locke.html
 
-- name: Discover Project
+# - name: Discover Project
+#   category: misc
+#   brief: Discover
+#   image: assets/images/discover.png
+#   url: discover.html
+
+- name: Audio over Google Docs
   category: misc
-  brief: Discover
-  image: assets/images/discover.png
-  url: hydro.html
+  brief: 2019 Hackathon
+  image: assets/images/gdocaudio.png
+  url: gdocaudio.html
