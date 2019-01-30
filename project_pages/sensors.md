@@ -9,7 +9,7 @@ In the summer between my Sophomore and Junior years of college, I was accepted i
 
 ### Poster and Summer Research
 <figure>
-  <object style="width: 85vw; height:120vh;" data="/assets/sensors/poster.pdf"></object>
+  <object style="width: 85vw; height:85vh; display: flex; align-items: center; justify-content: center;" data="/assets/sensors/poster.pdf"></object>
   <figcaption><em>Research Poster</em></figcaption>
 </figure>
 

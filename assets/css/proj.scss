@@ -9,7 +9,7 @@ body{
 }
 
 .indent_container{
-  padding-left: 1em;
+  padding-left: 0;
 }
 
 .internal{
@@ -32,9 +32,9 @@ body{
   border: #222;
   border-radius: 3.5px;
   width:18vw;
-  font-size: 3vw;
+  font-size: 4.5vh;
   height: 4vh;
-  margin-left: -1%;
+  margin-left: 2%;
   border: thin #C1C1C1 solid;
   padding: 0.5vh;
 }
@@ -44,7 +44,7 @@ body{
 }
 
 .back_button{
-  max-width: 3vw;
+  max-width: 4.5vh;
   padding-top: 2%;
   margin-left: 0.5vw;
   margin-right: 0.5vw;
