@@ -98,7 +98,11 @@ body {
 
 .project_container {
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  background-color: #E2F0F7;
+  border: thin solid #B3BEC3;
+  border-radius: 5px;
+  padding: 4vw; }
 
 .indent_container {
   margin-left: 3vw; }
