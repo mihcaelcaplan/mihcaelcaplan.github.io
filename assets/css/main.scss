@@ -11,7 +11,10 @@ body{
 
 .project_container{
   display:flex;
+  display: -webkit-flex;
   flex-direction: row;
+  -webkit-flex-direction:row;
+  flex-shrink: 0;
   background-color: #E2F0F7;
   border: thin solid #B3BEC3;
   border-radius: 5px;

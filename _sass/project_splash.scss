@@ -28,11 +28,17 @@
   color: #303030;
   margin:0;
   padding: .4vh;
-  overflow-x: scroll;
+  overflow-y: scroll;
+  // scrollbar-width: none; /* Firefox */
+  // -ms-overflow-style: none;  /* IE 10+ */
   border-radius: inherit;
   font-size: 1.8vw;
   height: 5vh;
 
+  }
+
+  .project_cap::-webkit-scrollbar{
+    width: 0;
   }
 
 .project_link{

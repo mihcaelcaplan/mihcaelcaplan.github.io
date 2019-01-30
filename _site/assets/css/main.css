@@ -25,10 +25,13 @@
   color: #303030;
   margin: 0;
   padding: .4vh;
-  overflow-x: scroll;
+  overflow-y: scroll;
   border-radius: inherit;
   font-size: 1.8vw;
   height: 5vh; }
+
+.project_cap::-webkit-scrollbar {
+  width: 0; }
 
 .project_link {
   text-decoration: none; }
@@ -102,7 +105,10 @@ body {
 
 .project_container {
   display: flex;
+  display: -webkit-flex;
   flex-direction: row;
+  -webkit-flex-direction: row;
+  flex-shrink: 0;
   background-color: #E2F0F7;
   border: thin solid #B3BEC3;
   border-radius: 5px;
