@@ -5,7 +5,7 @@
 
 body{
   font-family: Arial;
-  background-color: #f7feff;
+  background-color: #FCFCF9;
 }
 
 .indent_container{
@@ -31,9 +31,10 @@ body{
   background-color: rgba(#838383, .2);
   border: #222;
   border-radius: 3.5px;
-  width:100vw ;
-  font-size: 1.65vw;
-  height: 10vh;
+  width:18vw ;
+  font-size: 3vw;
+  height: 4vh;
+  padding: 0.5vh;
   // margin-left: -1%;
   border: thin #C1C1C1 solid;
 }
@@ -43,13 +44,24 @@ body{
 }
 
 .back_button{
-  max-width: 2vw;
+  max-width: 3vw;
   padding-top: 2%;
+  margin-left: 0.5vw;
+  margin-right: 0.5vw;
+  margin-bottom: 0.5vw;
 }
 
 .project_gallery{
   display:flex;
   flex-direction: row;
+}
+
+.content{
+  padding: 2vw;
+  margin: 2vw;
+  background-color: #E2F0F7;
+  border: thin solid #B3BEC3;
+  border-radius: 5px;
 }
 
 h1{

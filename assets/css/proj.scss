@@ -5,7 +5,7 @@
 
 body{
   font-family: Arial;
-  background-color: #f7feff;
+  background-color: #FCFCF9;
 }
 
 .indent_container{
@@ -31,11 +31,12 @@ body{
   background-color: rgba(#838383, .2);
   border: #222;
   border-radius: 3.5px;
-  width: 8vw;
-  font-size: 1.65vw;
+  width:18vw;
+  font-size: 3vw;
   height: 4vh;
   margin-left: -1%;
   border: thin #C1C1C1 solid;
+  padding: 0.5vh;
 }
 
 .back_link:active{
@@ -43,10 +44,11 @@ body{
 }
 
 .back_button{
-  max-width: 2vw;
+  max-width: 3vw;
   padding-top: 2%;
   margin-left: 0.5vw;
   margin-right: 0.5vw;
+  margin-bottom: 0.5vw;
 }
 
 .project_wrapper{

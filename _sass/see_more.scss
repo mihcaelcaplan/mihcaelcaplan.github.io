@@ -18,10 +18,11 @@
   border: #222;
   border-radius: 3.5px;
   width: 45%;
-  font-size: 1.8vw;
+  font-size: 3vw;
   height:3.5vh;
   margin-left: 75%;
   border: thin #C1C1C1 solid;
+  padding: 0.75vh;
 }
 
 .see_link:active{
@@ -43,8 +44,8 @@
 .back_button{
   margin-left: 1vw;
   margin-right: 1vw;
-  max-width: 2vw;
-  max-height: 2vw;
+  margin-bottom: 0.5vw;
+  max-width: 2.5vw;
   padding-top:1%;
   -moz-transform: scaleX(-1);
 -o-transform: scaleX(-1);

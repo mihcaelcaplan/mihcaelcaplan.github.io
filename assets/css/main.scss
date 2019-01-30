@@ -6,7 +6,7 @@
 
 body{
   font-family: Arial;
-  background-color: #F9F9FF;
+  background-color: #FCFCF9;
 }
 
 .project_container{
@@ -24,6 +24,8 @@ body{
 
 .indent_container{
   margin-left: 3vw;
+  display: flex;
+  flex-flow: column;
 
 }
 
