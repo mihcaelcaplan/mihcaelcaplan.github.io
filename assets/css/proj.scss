@@ -49,9 +49,20 @@ body{
   margin-right: 0.5vw;
 }
 
+.project_wrapper{
+  background-color: #E2F0F7;
+  border: thin solid #B3BEC3;
+  border-radius: 5px;
+  margin: 3vh;
+  overflow: scroll;
+
+}
+
 .project_gallery{
   display:flex;
   flex-direction: row;
+
+
 }
 
 h1{
@@ -62,6 +73,7 @@ h1{
 }
 
 h2{
+  margin:2vh;
   font-family: Arial;
   font-size: 3.4vh;
 }

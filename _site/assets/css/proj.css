@@ -4,7 +4,7 @@
   text-align: center;
   font-size: 90%;
   text-indent: 0;
-  border: thin #B3D0D3 solid;
+  border: thin rgba(201, 216, 201, 0.7) solid;
   margin: .5em;
   padding: 0;
   background-color: #E8E8F7;
@@ -20,7 +20,7 @@
   border-radius: inherit; }
 
 .project_cap {
-  background: linear-gradient(to top, #F6E7D6, rgba(246, 231, 214, 0.25));
+  background: linear-gradient(to top, #A3E9A6, rgba(163, 233, 166, 0.25));
   color: #303030;
   margin: 0;
   padding: .4vh;
@@ -45,9 +45,13 @@
   width: 30%;
   margin-left: .3%;
   margin-right: .3%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  text-decoration: none;
+  text-align: center;
+  justify-content: center;
   font-size: 1.6vw;
-  font-style: italic;
-  font-weight: bolder;
   text-decoration: none;
   text-align: center;
   color: #4A4949; }
@@ -89,6 +93,13 @@ body {
   margin-left: 0.5vw;
   margin-right: 0.5vw; }
 
+.project_wrapper {
+  background-color: #E2F0F7;
+  border: thin solid #B3BEC3;
+  border-radius: 5px;
+  margin: 3vh;
+  overflow: scroll; }
+
 .project_gallery {
   display: flex;
   flex-direction: row; }
@@ -100,5 +111,6 @@ h1 {
   margin-block-end: 0.30em; }
 
 h2 {
+  margin: 2vh;
   font-family: Arial;
   font-size: 3.4vh; }

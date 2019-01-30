@@ -20,7 +20,11 @@ body{
   // height: 100;
 }
 
-.back_link,{
+.back_link{
+  display: flex;
+  align-items: center;
+  text-align: center ;
+  justify-content: center;
   text-decoration: none;
   text-align: center;
   vertical-align: center;
