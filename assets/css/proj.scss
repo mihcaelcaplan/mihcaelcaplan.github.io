@@ -20,9 +20,12 @@ body{
   // height: 100;
 }
 
-.back_link,{
+.back_link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
-  text-align: center;
+  text-align: center ;
   vertical-align: center;
   color: #303030;
   background-color: rgba(#838383, .2);
@@ -42,6 +45,8 @@ body{
 .back_button{
   max-width: 2vw;
   padding-top: 2%;
+  margin-left: 0.5vw;
+  margin-right: 0.5vw;
 }
 
 .project_gallery{

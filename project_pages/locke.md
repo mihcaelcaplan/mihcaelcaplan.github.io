@@ -14,4 +14,4 @@ Turns out, people have been thinking about that for a while. The ancient Greek p
 The paper that I wrote focused on Locke's ideas about essence, and used an epistemological move called "contextualism" to argue that sometimes it's not right to say that something "has" a quality. You can download it [here](/assets/locke/paper.pdf) or read it below:
 
 
-<iframe style="border: thin; width: 60vw; height: 95vh;" src="https://docs.google.com/document/d/e/2PACX-1vRT8od4AKNOVhsP3h9ra6oZQVrrvVSpt8cMk6vhp36JeCmE_Uwho_4h6ToWnvDn-DFtq0cbEZSjh4vp/pub?embedded=true"></iframe>
+<iframe style="border: thin; width: 75vw; height: 95vh; display: block; margin-left: auto; margin-right: auto; border: thin solid grey; border-radius: 5px" src="https://docs.google.com/document/d/e/2PACX-1vRT8od4AKNOVhsP3h9ra6oZQVrrvVSpt8cMk6vhp36JeCmE_Uwho_4h6ToWnvDn-DFtq0cbEZSjh4vp/pub?embedded=true"></iframe>

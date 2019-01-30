@@ -14,16 +14,16 @@ title: splash
 
         <h2>Brown University 2019, Computer Engineering (A.B) & Philosophy (A.B)</h2>
         <!-- set up the main projects body -->
-        <div class=project_container>
+        <div class=project_container style="overflow: scroll;">
 
           <!-- use liquid to loop through first 3 projects in projects data structure -->
           {% for project in site.data.projects %}
-            {% if forloop.index  < 4%}
+
               {% capture name %} {{ project.brief }} {% endcapture %}
               {% capture image %} {{project.image}}{% endcapture %}
               {% capture proj_url %} {{ project.url }} {% endcapture %}
               {% include project_logo.html url=proj_url img=image caption=name %}
-            {% endif %}
+
 
           {% endfor %}
 
@@ -32,7 +32,7 @@ title: splash
         <!-- adding the see more proj -->
         <div class=see_bar>
           <a href="/projects.html" class=see_link>
-              All Projects
+            <span class=see_text>  All Projects  </span>
             <img class=back_button src="assets/images/back_button.png"/>
 
           </a>

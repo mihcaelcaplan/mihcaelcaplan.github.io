@@ -25,7 +25,7 @@ First, we used the [PyAudio](https://people.csail.mit.edu/hubert/pyaudio/) libra
 
 All of the interaction with Google Docs was done through the [Selenium Python](https://selenium-python.readthedocs.io) bindings. This let us copy and paste strings from Python very quickly. In order to get the base64 strings into the system clipboard, we used a library called [Pyperclip](https://pypi.org/project/pyperclip/). Using this library allowed us to then simply automate the "Ctrl"+"V" keypress action to move the string into a Google Doc.
 
-On the receive end, a listener function constantly polled the Google Doc for new chunks of audio data. When it received some, it decoded the base64 and and then wrote those bytes to the soundcard.
+On the receive end, a listener function constantly polled the Google Doc for new chunks of audio data. When it received some, it decoded the base64 and and then wrote those bytes to the soundcard, playing the audio.
 
 We implemented some simple compression using the built-in python libraries, but didn't notice any serious improvements.
 
@@ -34,4 +34,4 @@ We implemented some simple compression using the built-in python libraries, but 
 
 We were very happy with the results, and were able to send close to real-time audio over an unconventional medium.
 
-Our main problem seemed to be due to the rate limits on Google Doc copy and paste operations. When we were transferring text too fast, the document skipped packets on the receive end. Going too fast meant that Google Docs couldn't keep up. Ultimately, this meant that we had a close to 4 second lag on bidirectional communication, which made conversation very slow. 
+Our main problem seemed to be due to the rate limits on Google Doc copy and paste operations. When we were transferring text too fast, the document skipped packets on the receive end. Going too fast meant that Google Docs couldn't keep up. Ultimately, this meant that we had a close to 4 second lag on bidirectional communication, which made conversation very slow.
