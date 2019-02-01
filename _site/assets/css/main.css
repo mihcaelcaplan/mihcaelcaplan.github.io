@@ -55,7 +55,7 @@
   text-align: center;
   justify-content: center;
   color: #303030;
-  background-color: rgba(131, 131, 131, 0.2);
+  background-color: rgba(196, 95, 95, 0.5);
   border: #222;
   border-radius: 3.5px;
   width: 45%;
@@ -88,7 +88,7 @@
   margin-bottom: 3vw; }
 
 .nav_link {
-  background-color: #F4DBDB;
+  background-color: rgba(196, 95, 95, 0.9);
   border: thin solid #B88C8C;
   border-radius: 4px;
   width: 30%;
@@ -105,7 +105,7 @@
   font-size: 2.3vw;
   text-decoration: none;
   text-align: center;
-  color: #4A4949; }
+  color: rgba(0, 0, 0, 0.7); }
 
 body {
   font-family: Arial;
