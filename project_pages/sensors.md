@@ -1,5 +1,5 @@
 ---
-title: Sensor project
+title: Sensor Network
 layout: project_header
 
 permalink: /sensors.html

@@ -1,5 +1,5 @@
 ---
-title: about
+title: About
 layout: misc_header
 permalink: /about.html
 ---

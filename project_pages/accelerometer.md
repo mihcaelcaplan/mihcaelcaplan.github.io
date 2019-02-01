@@ -1,5 +1,5 @@
 ---
-title: Accelerometer project
+title: Accelerometer
 layout: project_header
 
 permalink: /accelerometer.html

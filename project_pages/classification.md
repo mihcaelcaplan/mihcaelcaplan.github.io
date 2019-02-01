@@ -1,5 +1,5 @@
 ---
-title: checkout classification
+title: Checkout Classifier
 layout: project_header
 
 permalink: /classification.html
@@ -54,4 +54,4 @@ Ultimately, my network performed at a sub-par accuracy of only about 80% on real
 
 I believe that this was mostly because of the data that I collected. As seen in the above timelapse, many of the items were in boxes, so the visual diversity was not especially rich. I did not attempt to classify the internal items of the boxes (impossible?), but instead trained on pre-packaged items that were visually identifiable. It is quite possible that my labelled training data was not adequate to categorize some items because of visual similarities between classes that were not due to the actual target of labelling. For example, if some items were bought only with other items, the network will encode this regularity as relevant to classification, when of course it is not.
 
-I learned a ton, and it was my first real exposure to building neural networks. The following summer I learned TensorFlow and played around with some recurrent nets, only because of this exposure. 
+I learned a ton, and it was my first real exposure to building neural networks. The following summer I learned TensorFlow and played around with some recurrent nets, only because of this exposure.

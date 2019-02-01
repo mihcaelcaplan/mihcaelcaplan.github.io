@@ -1,5 +1,5 @@
 ---
-title: motorcycle project
+title: Motorcycle Rebuild
 layout: project_header
 
 permalink: /motorcycle.html

@@ -1,5 +1,5 @@
 ---
-title: thermometer project
+title: Thermometer Control
 layout: project_header
 
 permalink: /thermometer.html

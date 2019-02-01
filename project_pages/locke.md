@@ -1,5 +1,5 @@
 ---
-title: locke paper
+title: Locke Paper
 layout: project_header
 
 permalink: /locke.html
