@@ -56,14 +56,16 @@ body{
   border: thin solid #B3BEC3;
   border-radius: 5px;
   margin: 3vh;
-  overflow: scroll;
+  // overflow: scroll;
   padding: 4vh
 
 }
 
+
 .project_gallery{
   display:flex;
   flex-direction: row;
+  overflow: scroll;
 
 
 }
