@@ -37,6 +37,6 @@ The final stage is the Twilio Webhook, a snippet of javascript that can access t
 
 
 ### Conclusions
-This was a fun project,at the time it felt like the first time my hunger to build integrated systems had been somewhat satiated. I had Arduino experience earlier, but never the capability to connect as many components as I was able to with Python and Google Apps Script.
+This was a fun project. At the time it felt like the first time my hunger to build integrated systems had been somewhat satiated. I had Arduino experience earlier, but never the capability to connect as many components as I was able to with Python and Google Apps Script.
 
 The motor was the weakest link in this project. Ultimately I never achieved thermostat control because I couldn't get enough torque to move the thermostat, and didn't have time to fabricate a coupling (this being much beyond the scope of the project).
