@@ -15,7 +15,7 @@
 
 .project_img {
   width: 100%;
-  height: 85%;
+  height: 87%;
   object-fit: cover;
   border-radius: inherit; }
 
@@ -31,9 +31,9 @@
   margin-top: 1vmin;
   padding-left: .6vh;
   padding-right: .6vh;
-  overflow-x: hidden;
+  overflow: hidden;
   border-radius: inherit;
-  font-size: 2.75vmin; }
+  font-size: 2.8vmin; }
 
 .project_link {
   text-decoration: none; }
