@@ -32,7 +32,7 @@ body{
   border: #222;
   border-radius: 3.5px;
   width:18vw;
-  font-size: 4.5vh;
+  font-size: 3vmin;
   height: 4vh;
   margin-left: 2%;
   border: thin #C1C1C1 solid;
@@ -44,7 +44,7 @@ body{
 }
 
 .back_button{
-  max-width: 4.5vh;
+  max-width: 3vmin;
   padding-top: 2%;
   margin-left: 0.5vw;
   margin-right: 0.5vw;
@@ -52,11 +52,12 @@ body{
 }
 
 .project_wrapper{
-  background-color: #E2F0F7;
+  background-color: #9BBDDC;
   border: thin solid #B3BEC3;
   border-radius: 5px;
   margin: 3vh;
   overflow: scroll;
+  padding: 4vh
 
 }
 

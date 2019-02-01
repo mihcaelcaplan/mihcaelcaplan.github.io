@@ -4,12 +4,12 @@
   text-align: center;
   font-size: 90%;
   text-indent: 0;
-  border: thin rgba(#C9D8C9, .7) solid;
+  border: thin rgba(#979FA5, .7) solid;
   margin: .5em;
   padding: 0;
-  background-color: #E8E8F7;
-  width: 20vw;
-  height: 20vw;
+  background: linear-gradient(to top,#CFE3F2,rgba(#CFE3F2, .0));
+  width: 30vw;
+  height: 30vw;
   text-decoration: none;
   border-radius: 4px;
 }
@@ -23,15 +23,20 @@
 }
 
 .project_cap{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  text-align: center;
   // background-color: #F6E7D6;
-  background: linear-gradient(to top,#A3E9A6,rgba(#A3E9A6, .25));
-  color: #303030;
-  margin:0;
-  padding: .6vh;
+  // background: linear-gradient(to top,#A3E9A6,rgba(#A3E9A6, .25));
+  color: #000;
+  margin-top:0.5vw;
+  padding-left: .6vh;
+  padding-right: .6vh;
   overflow-x: scroll;
   border-radius: inherit;
-  font-size: 1.8vw;
-  height: 3vh;
+  font-size: 1.5vmax;
+  // height: 3vh;
 
   }
 

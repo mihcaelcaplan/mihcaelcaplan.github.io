@@ -5,14 +5,14 @@
   text-align: center;
   font-size: 90%;
   text-indent: 0;
-  border: thin rgba(201, 216, 201, 0.7) solid;
+  border: thin rgba(151, 159, 165, 0.7) solid;
   margin: .5em;
   padding: 0;
-  background-color: #D9EEF0;
   width: 30vw;
   height: 30vw;
   text-decoration: none;
-  border-radius: 4px; }
+  border-radius: 4px;
+  background: linear-gradient(to top, #CFE3F2, rgba(207, 227, 242, 0.25)); }
 
 .project_img {
   width: 100%;
@@ -23,14 +23,17 @@
   border-bottom-left-radius: 0; }
 
 .project_cap {
-  background: linear-gradient(to top, #A3E9A6, rgba(163, 233, 166, 0.25));
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  text-align: center;
   color: #303030;
-  margin: 0;
-  padding: .4vh;
+  margin-top: .4vh;
+  padding-left: .4vh;
+  padding-right: .4vh;
   overflow-y: scroll;
   border-radius: inherit;
-  font-size: 2.5vw;
-  height: 5vh; }
+  font-size: 2vmax; }
 
 .project_cap::-webkit-scrollbar {
   width: 0; }
@@ -56,7 +59,7 @@
   border: #222;
   border-radius: 3.5px;
   width: 45%;
-  font-size: 3vw;
+  font-size: 3vmin;
   height: 3.5vh;
   margin-left: 75%;
   border: thin #C1C1C1 solid;
@@ -69,7 +72,7 @@
   margin-left: 1vw;
   margin-right: 1vw;
   margin-bottom: 0.5vw;
-  max-width: 2.5vw;
+  max-width: 3vmin;
   padding-top: 1%;
   -moz-transform: scaleX(-1);
   -o-transform: scaleX(-1);
@@ -114,7 +117,7 @@ body {
   flex-direction: row;
   -webkit-flex-direction: row;
   flex-shrink: 0;
-  background-color: #E2F0F7;
+  background-color: #9BBDDC;
   border: thin solid #B3BEC3;
   border-radius: 5px;
   padding: 4vw; }
