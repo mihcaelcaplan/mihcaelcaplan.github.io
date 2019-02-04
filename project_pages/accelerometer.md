@@ -16,7 +16,7 @@ The beginning stages of my work revolved around the ADXL345 [datasheet](https://
 
 <figure>
   <img src="/assets/accelerometer/spitiming.png" style="width: 50vw"/>
-  <figcaption><em>Register Map</em></figcaption>
+  <figcaption><em> Spi Timing</em></figcaption>
 </figure>
 
 I tried to use the [WiringPi](https://projects.drogon.net/category/raspberry-pi/wiringpi-raspberry-pi/) library, but kept getting garbage data back from the device. A little digging revealed that there are multiple SPI modes, and WiringPi only has Mode 0 baked in. So, I switched to the BCM2835 library, which proved to be better.
