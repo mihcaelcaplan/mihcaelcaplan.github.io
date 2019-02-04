@@ -19,7 +19,7 @@ The beginning stages of my work revolved around the ADXL345 [datasheet](https://
   <figcaption><em> Spi Timing</em></figcaption>
 </figure>
 
-I tried to use the [WiringPi](https://projects.drogon.net/category/raspberry-pi/wiringpi-raspberry-pi/) library, but kept getting garbage data back from the device. A little digging revealed that there are multiple SPI modes, and WiringPi only has Mode 0 baked in. So, I switched to the BCM2835 library, which proved to be better.
+I tried to use the [WiringPi](https://projects.drogon.net/category/raspberry-pi/wiringpi-raspberry-pi/) library, but kept getting garbage data back from the device. A little digging revealed that there are multiple SPI modes, and WiringPi only has Mode 0 baked in. So, I switched to the [BCM2835](http://www.airspayce.com/mikem/bcm2835/index.html) library, which proved to be better.
 
 After I confirmed I could read/write, I had to peruse the register map and figure out which bits I needed to set in order that the accelerometer would operate the way I wanted.
 
