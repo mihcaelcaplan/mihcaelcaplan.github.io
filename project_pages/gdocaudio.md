@@ -15,7 +15,7 @@ We are both members of the Brown Amateur Radio Club, so we were interested in do
 ### The Build
 We started off by sketching out the data flow:
 <figure>
-  <img src="/assets/gdocaudio/data.png" style="width: 75vw"/>
+  <img src="/assets/gdocaudio/data.png" style="width: 75vw; border-radius: 35px"/>
   <figcaption><em>Data Flow </em></figcaption>
 </figure>
 
