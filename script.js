@@ -1,55 +1,76 @@
+//nice delicious globals
 var ctx;
+var win_width;
+var win_length;
+var R1;
+var R2;
 
-window.onload = ()=>{
-    ctx = document.querySelector("canvas").getContext("2d");
+class rect {
+    constructor (color){
+        
+        this.color = color;
+        this.right = getRandomInt(0,1);
+        this.up = getRandomInt(0,1);
+        this.x = getRandomInt(20, 80);
+        this.y = getRandomInt(20, 80);
+        this.width = getRandomInt(50, 200);
+        this.height = getRandomInt(50, 200);
+        
+    }
+    draw = ()=>{
+        ctx.fillStyle = this.color;
+        ctx.fillRect(this.x, this.y, this.width, this.height);
+    }
+    clear = ()=>{
+        ctx.clearRect(this.x, this.y, this.width, this.height);
+    }
 
-    ctx.fillStyle = 'green';
-    ctx.fillRect(10, 10, 150, 100);
+    moveV = (step)=>{
+        this.clear()
+        this.y += step;
+        this.draw()
+    }
 
-    //start a path on load
-    ctx.beginPath();
-    ctx.moveTo(0,0);
+    moveH = (step)=>{
+        this.clear()
+        this.x += step;
+        this.draw()
+    }
+}
+  
+
+//helpful functions 
+function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-var n = 0;
-setInterval(()=>{
-    console.log(n,n)
-    ctx.lineTo(n, n)
-    ctx.stroke()
-    n++
+//run when page loads 
+window.onload = ()=>{
+    ctx = document.querySelector("canvas").getContext("2d");
+    ctx.globalAlpha = 0.1;
 
-}, 33)
+    //get window size 
+    win_width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth,
+    win_height = window.innerHeight|| document.documentElement.clientHeight|| document.body.clientHeight;
+    console.log(`window width: ${win_width} height: ${win_height}`)
+    R1 = new rect('green');
+    R2 = new rect('red');
+    R1.draw();
+    R2.draw();
+}
 
-
-
-// //vars
-// n = 0; 
-// backwards = 0;
-// alpha_lower_bound = 0
-// alpha_upper_bound = 0.15
-// //color
-// r = 50
-// g = 50
-// b = 50
+// //interval funcs
 // setInterval(()=>{
-//     console.log(n)
-//     if(backwards == 0  & n < alpha_upper_bound){
-//         n+=0.001
-//     }
-//     else if( backwards==0 & n>=alpha_upper_bound){
-//         backwards=1;
-//     }
-//     if (backwards == 1 & n > alpha_lower_bound ){
-//         n-=0.001;
-//     }
-//     else if(backwards==1 & n<=alpha_lower_bound){
-//         backwards = 0;
-//     }
-    
-//     // document.querySelector(".project_list").style.backgroundColor = `rgba(${r}, ${g}, ${b}, ${n})`; 
-//     // // document.querySelector(".project_list").style.box-shadow = `5px 5px 5px 5px rgba(${r}, ${g}, ${b}, ${n});`; 
+//     stepV = .1;
+//     stepH = 0.005;
+
+//     R1.moveV(stepV);
+
+//     // for(r in rect_l){
+//     //     r.moveV(stepV);
+//     //     r.moveH(stepH);
+//     // }
 
 // }, 33)
-
-
-

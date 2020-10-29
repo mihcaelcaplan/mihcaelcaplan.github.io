@@ -30,20 +30,53 @@ title: Michael Caplan
               <li><a href={{project.url}}>{{ project.brief }}</a></li>
           {% endfor %}
         </ul>
+
+        <ul id="projects">
+          {% for project in site.data.projects %}
+              <!-- {% capture name %} {{ project.brief }} {% endcapture %}
+              {% capture image %} {{project.image}}{% endcapture %}
+              {% capture proj_url %} {{ project.url }} {% endcapture %}
+              {% include project_logo.html url=proj_url img=image caption=name %} -->
+              <li><a href={{project.url}}>{{ project.brief }}</a></li>
+          {% endfor %}
+        </ul>
+
+        <ul id="projects">
+          {% for project in site.data.projects %}
+              <!-- {% capture name %} {{ project.brief }} {% endcapture %}
+              {% capture image %} {{project.image}}{% endcapture %}
+              {% capture proj_url %} {{ project.url }} {% endcapture %}
+              {% include project_logo.html url=proj_url img=image caption=name %} -->
+              <li><a href={{project.url}}>{{ project.brief }}</a></li>
+          {% endfor %}
+        </ul>
+        <ul id="projects">
+          {% for project in site.data.projects %}
+              <!-- {% capture name %} {{ project.brief }} {% endcapture %}
+              {% capture image %} {{project.image}}{% endcapture %}
+              {% capture proj_url %} {{ project.url }} {% endcapture %}
+              {% include project_logo.html url=proj_url img=image caption=name %} -->
+              <li><a href={{project.url}}>{{ project.brief }}</a></li>
+          {% endfor %}
+        </ul>
+        <ul id="projects">
+          {% for project in site.data.projects %}
+              <!-- {% capture name %} {{ project.brief }} {% endcapture %}
+              {% capture image %} {{project.image}}{% endcapture %}
+              {% capture proj_url %} {{ project.url }} {% endcapture %}
+              {% include project_logo.html url=proj_url img=image caption=name %} -->
+              <li><a href={{project.url}}>{{ project.brief }}</a></li>
+          {% endfor %}
+        </ul>
+        </div>
         </div>
 
-        <!-- adding the see more proj -->
-        <!-- <div class=see_bar>
-          <a href="/projects.html" class=see_link>
-            <span class=see_text>  All Projects  </span>
-            <img class=back_button src="assets/images/back_button.png"/>
+      <div class='floater'>
+        <p>links</p>
+        <a href="https://www.google.com">search web 🔎</a>
+        <a href=""></a>
+      </div>
 
-          </a>
-
-        </div> -->
-
-        <!-- adding the bottom nav bar -->
-        <!-- {%include nav_bar.html%} -->
     </div>
   </body>
 </html>

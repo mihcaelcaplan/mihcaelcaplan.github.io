@@ -4,6 +4,9 @@
 @import "see_more";
 @import "nav";
 
+
+
+
 body{
   font-family: "Courier New", Courier, monospace;
 }
@@ -18,8 +21,9 @@ body{
 }
 
 .content_container{
-  position: absolute;
+  position: relative;
   z-index: 1;
+  width: 60%
 }
 
 .project_container{
@@ -55,3 +59,68 @@ h2{
   color: #333333;
 }
 
+h3{
+  font-size: 3vh;
+}
+
+li{
+  font-size: 2.5vh;
+}
+
+.floater{
+// padding: 3px;
+border: 1px solid black;
+border-radius: 3px;
+text-align: center;
+}
+
+.floater a{
+font-size: 2.25vh;
+}
+.floater p{
+font-size: 4vh;
+text-decoration: underline;
+
+}
+
+@media(min-width: 400px){
+  .floater{
+    position: fixed;
+    right: 5vw;
+    top: 30%;
+    width: 30%;
+    height: 60%;
+
+  }
+}
+
+@media (max-width: 400px) {
+  // make the floating sidebar go to top center and push the margin
+  .content_container{
+    width: 100%
+  }
+
+  .floater{
+    position: absolute;
+    width: 85%;
+    height: 15%;
+
+    left: 10;
+    top: 100;
+  }
+
+  .project_list{
+    margin-top: 25vh;
+  }
+
+}
+
+@media (max-width: 300px) {
+  .floater{
+    top: 170;
+  }
+
+  .project_list{
+    margin-top: 28vh;
+  }
+}
