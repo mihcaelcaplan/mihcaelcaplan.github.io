@@ -55,8 +55,8 @@ load_func = function(){
     win_width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth,
     win_height = window.innerHeight|| document.documentElement.clientHeight|| document.body.clientHeight;
     console.log(`window width: ${win_width} height: ${win_height}`)
-    var R1 = new rect('green');
-    var R2 = new rect('red');
+    var R1 = new rect('rgb(73, 173, 95)');
+    var R2 = new rect('rgb(173, 73, 95)');
     R1.draw();
     R2.draw();
 }
