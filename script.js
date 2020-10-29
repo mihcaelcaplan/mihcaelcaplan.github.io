@@ -47,7 +47,7 @@ function getRandomInt(min, max) {
 }
 
 //run when page loads 
-window.onload = function(){
+load_func = function(){
     ctx = document.querySelector("canvas").getContext("2d");
     ctx.globalAlpha = 0.1;
 
@@ -60,3 +60,5 @@ window.onload = function(){
     R1.draw();
     R2.draw();
 }
+
+window.addEventListener('load', load_func);
