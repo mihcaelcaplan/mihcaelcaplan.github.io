@@ -1,6 +1,6 @@
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="/assets/css/pages.css"/>
+  <link rel="stylesheet" href="/assets/css/blog.css"/>
   <title>Thermometer Control</title>
   </head>
 <body>
@@ -8,9 +8,9 @@
   <h1>Michael Caplan</h1>
 
   <nav class=internal>
-    <a href="/projects.html" class=back_link>
-    <img class=back_button src="assets/images/back_button.png"/>
-    Projects
+    <a href="/" class=back_link>
+      <img class=back_button src="assets/images/back_button.png"/>
+      Home
     </a>
 
     </nav>
@@ -26,7 +26,7 @@ It centered on practical uses of programming and taught a diverse range of topic
 <p>First, I connected the digital thermometer an Arduino, because I was much more comfortable with analog GPIO using Arduino at that time. Then, I connected the Arduino to a Raspberry Pi using the HC-05 bluetooth module. Today, I would just use I<sup>2</sup>C on the Raspberry Pi (although I wouldn’t get to play with a bluetooth SOC). I also connected a MOSFET motor driver circuit to the Arduino. I stole a 30V MOSFET from an old drill, and then soldered some jumper wires to connect to the Arduino and a diode to prevent back EMF spikes from the motor breaking down the MOSFET junction.</p>
 
 <figure>
-  <img src="/assets/thermometer/hardware.png" style="width: 50vw" />
+  <img src="/assets/thermometer/hardware.png" />
   <figcaption><em>Hardware Diagram</em></figcaption>
 </figure>
 
@@ -42,7 +42,7 @@ If the temperature in the room was greater, the Arduino tried to move the motor 
 <p>The final stage is the Twilio Webhook, a snippet of javascript that can access the SMS that Twilio is receiving. This was configured to also have access to the Google Sheet. Thus, when a text message was sent or received, it could use temperature data from the appropriate areas of the Google Sheet to relay the current temperature to a user or accept desired temperature settings.</p>
 
 <figure>
-  <img src="/assets/thermometer/software.png" style="width: 50vw" />
+  <img src="/assets/thermometer/software.png" />
   <figcaption><em>Software Diagram</em></figcaption>
 </figure>
 
@@ -52,16 +52,5 @@ If the temperature in the room was greater, the Arduino tried to move the motor 
 <p>The motor was the weakest link in this project. Ultimately I never achieved thermostat control because I couldn’t get enough torque to move the thermostat, and didn’t have time to fabricate a coupling (this being much beyond the scope of the project).</p>
 
     </div>
-
-
-  <nav class="external_nav">
-  <a class=nav_link href="/about.html">About</a>
-  <a class=nav_link href="/resume.html">Resume</a>
-  <a class=nav_link href="/transcript.html">Transcript</a>
-  <a class=nav_link href="https://discover-artsci.space/">Discover Project</a>
-  <a class=nav_link href="http://www.github.com/mihcaelcaplan">Github</a>
-  <a></a>
-</nav>
-
 
   </body>

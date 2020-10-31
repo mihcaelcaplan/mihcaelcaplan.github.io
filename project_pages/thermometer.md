@@ -15,7 +15,7 @@ For my final project I designed a system to precisely control the temperature in
 First, I connected the digital thermometer an Arduino, because I was much more comfortable with analog GPIO using Arduino at that time. Then, I connected the Arduino to a Raspberry Pi using the HC-05 bluetooth module. Today, I would just use I<sup>2</sup>C on the Raspberry Pi (although I wouldn't get to play with a bluetooth SOC). I also connected a MOSFET motor driver circuit to the Arduino. I stole a 30V MOSFET from an old drill, and then soldered some jumper wires to connect to the Arduino and a diode to prevent back EMF spikes from the motor breaking down the MOSFET junction.
 
 <figure>
-  <img src="/assets/thermometer/hardware.png" style="width: 50vw"/>
+  <img src="/assets/thermometer/hardware.png"/>
   <figcaption><em>Hardware Diagram</em></figcaption>
 </figure>
 
@@ -31,7 +31,7 @@ The third stage is the Google Apps Script, which deals with new data that it get
 The final stage is the Twilio Webhook, a snippet of javascript that can access the SMS that Twilio is receiving. This was configured to also have access to the Google Sheet. Thus, when a text message was sent or received, it could use temperature data from the appropriate areas of the Google Sheet to relay the current temperature to a user or accept desired temperature settings.
 
 <figure>
-  <img src="/assets/thermometer/software.png" style="width: 50vw"/>
+  <img src="/assets/thermometer/software.png"/>
   <figcaption><em>Software Diagram</em></figcaption>
 </figure>
 

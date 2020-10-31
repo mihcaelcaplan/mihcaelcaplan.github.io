@@ -1,6 +1,6 @@
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="/assets/css/pages.css"/>
+  <link rel="stylesheet" href="/assets/css/blog.css"/>
   <title>Accelerometer</title>
   </head>
 <body>
@@ -8,9 +8,9 @@
   <h1>Michael Caplan</h1>
 
   <nav class=internal>
-    <a href="/projects.html" class=back_link>
-    <img class=back_button src="assets/images/back_button.png"/>
-    Projects
+    <a href="/" class=back_link>
+      <img class=back_button src="assets/images/back_button.png"/>
+      Home
     </a>
 
     </nav>
@@ -26,7 +26,7 @@
 <p>The beginning stages of my work revolved around the ADXL345 <a href="https://www.analog.com/media/en/technical-documentation/data-sheets/ADXL345.pdf">datasheet</a>, a 40 page masterpiece covering all of the minute details involved in using this full-featured MEMS accelerometer from Analog Devices. We decided to use SPI over I<sup>2</sup>C for maximum transfer speed.</p>
 
 <figure>
-  <img src="/assets/accelerometer/spitiming.png" style="width: 50vw" />
+  <img src="/assets/accelerometer/spitiming.png" />
   <figcaption><em> Spi Timing</em></figcaption>
 </figure>
 
@@ -35,7 +35,7 @@
 <p>After I confirmed I could read/write, I had to peruse the register map and figure out which bits I needed to set in order that the accelerometer would operate the way I wanted.</p>
 
 <figure>
-  <img src="/assets/accelerometer/registermap.png" style="width: 50vw" />
+  <img src="/assets/accelerometer/registermap.png" />
   <figcaption><em>Register Map</em></figcaption>
 </figure>
 
@@ -45,7 +45,7 @@
 <p>This wasn’t working and I was getting very nervous that I had a deep implementation error, until a team member pointed me to one of the last pages of the datasheet, which showed exactly how the data was coming back.</p>
 
 <figure>
-  <img src="/assets/accelerometer/dataformat.png" style="width: 50vw" />
+  <img src="/assets/accelerometer/dataformat.png" />
   <figcaption><em>Register Map</em></figcaption>
 </figure>
 
@@ -63,16 +63,5 @@
 <p>The full conclusions and all the code are in the github repository linked at the top. If you are interested, I suggest you read that.</p>
 
     </div>
-
-
-  <nav class="external_nav">
-  <a class=nav_link href="/about.html">About</a>
-  <a class=nav_link href="/resume.html">Resume</a>
-  <a class=nav_link href="/transcript.html">Transcript</a>
-  <a class=nav_link href="https://discover-artsci.space/">Discover Project</a>
-  <a class=nav_link href="http://www.github.com/mihcaelcaplan">Github</a>
-  <a></a>
-</nav>
-
 
   </body>

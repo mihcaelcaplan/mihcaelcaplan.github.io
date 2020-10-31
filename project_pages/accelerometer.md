@@ -15,7 +15,7 @@ In this context, it makes sense to talk about what I did on the project, which r
 The beginning stages of my work revolved around the ADXL345 [datasheet](https://www.analog.com/media/en/technical-documentation/data-sheets/ADXL345.pdf), a 40 page masterpiece covering all of the minute details involved in using this full-featured MEMS accelerometer from Analog Devices. We decided to use SPI over I<sup>2</sup>C for maximum transfer speed.
 
 <figure>
-  <img src="/assets/accelerometer/spitiming.png" style="width: 50vw"/>
+  <img src="/assets/accelerometer/spitiming.png"/>
   <figcaption><em> Spi Timing</em></figcaption>
 </figure>
 
@@ -24,7 +24,7 @@ I tried to use the [WiringPi](https://projects.drogon.net/category/raspberry-pi/
 After I confirmed I could read/write, I had to peruse the register map and figure out which bits I needed to set in order that the accelerometer would operate the way I wanted.
 
 <figure>
-  <img src="/assets/accelerometer/registermap.png" style="width: 50vw"/>
+  <img src="/assets/accelerometer/registermap.png"/>
   <figcaption><em>Register Map</em></figcaption>
 </figure>
 
@@ -35,7 +35,7 @@ I read in the top of the datasheet that the ADXL345 would return 10 bit integers
 This wasn't working and I was getting very nervous that I had a deep implementation error, until a team member pointed me to one of the last pages of the datasheet, which showed exactly how the data was coming back.
 
 <figure>
-  <img src="/assets/accelerometer/dataformat.png" style="width: 50vw"/>
+  <img src="/assets/accelerometer/dataformat.png"/>
   <figcaption><em>Register Map</em></figcaption>
 </figure>
 

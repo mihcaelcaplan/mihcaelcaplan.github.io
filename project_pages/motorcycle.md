@@ -8,7 +8,7 @@ permalink: /motorcycle.html
 During the summer between my Junior and Senior years in college,  I travelled across the continental U.S on a 1986 Honda V45 Magna. I bought the bike at the end of the previous summer for $500 off of craigslist. It didn't currently start, but it would run when the bike was jumped.
 
 <figure>
-  <img src="/assets/motorcycle/motorcycle.jpg" style="width: 25vw"/>
+  <img src="/assets/motorcycle/motorcycle.jpg"/>
   <figcaption><em>Packed up and ready to go </em></figcaption>
 </figure>
 
@@ -19,19 +19,19 @@ I bought a new battery, but I didn't know at the time about Cold Cranking Amps (
 After much thought and internet research, it seemed like I was gonna have to bite the bullet and clean the carburetors. The V4 engine at the heart of this bike is a behemoth, and each cylinder gets their own carburetor. This means the carburetor block is a big hunk of aluminum.
 
 <figure>
-  <img src="/assets/motorcycle/carb_block.jpg" style="width: 25vw"/>
+  <img src="/assets/motorcycle/carb_block.jpg"/>
   <figcaption><em>Carburetor Block </em></figcaption>
 </figure>
 
 Very scared, as I had never done this type of work on internal combustion engines before, I followed a guide from the V4MuscleBikes forum on carb cleaning for this model bike. Over the course of a couple weeks in between my classes, I disassembled each carburetor, cataloguing and bagging each part.
 
 <figure>
-  <img src="/assets/motorcycle/carb1.jpg" style="width: 25vw"/>
+  <img src="/assets/motorcycle/carb1.jpg"/>
   <figcaption><em>2 connected carbs </em></figcaption>
 </figure>
 
 <figure>
-  <img src="/assets/motorcycle/carb2.jpg" style="width: 25vw"/>
+  <img src="/assets/motorcycle/carb2.jpg"/>
   <figcaption><em>Disassembly </em></figcaption>
 </figure>
 
@@ -49,16 +49,16 @@ In Elko, Nevada an ignition coil went out, which left me running on 2/4 cylinder
 ### Pictures from the trip
 
 <figure>
-  <img src="/assets/motorcycle/corn.jpg" style="width: 25vw"/>
+  <img src="/assets/motorcycle/corn.jpg" />
   <figcaption><em>Midwest</em></figcaption>
 </figure>
 
 <figure>
-  <img src="/assets/motorcycle/decatur.jpg" style="width: 25vw"/>
+  <img src="/assets/motorcycle/decatur.jpg"/>
   <figcaption><em>Decatur, Indiana </em></figcaption>
 </figure>
 
 <figure>
-  <img src="/assets/motorcycle/desert.jpg" style="width: 25vw"/>
+  <img src="/assets/motorcycle/desert.jpg"/>
   <figcaption><em>Grand Junction, Colorado</em></figcaption>
 </figure>

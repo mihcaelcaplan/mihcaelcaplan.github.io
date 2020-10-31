@@ -32,13 +32,13 @@ In order to classify multiple targets, the class labels had to be one-hot encode
 
  The architecture ended up looking like this:
  <figure>
-   <img src="/assets/checkout/architecture.png" style="width: 25vw"/>
+   <img src="/assets/checkout/architecture.png"/>
    <figcaption><em>Basic Net Architecture </em></figcaption>
  </figure>
 
  I labelled the data with 14 targets, common items that are catalogued here:
  <figure>
-   <img src="/assets/checkout/targets.png" style="width: 25vw"/>
+   <img src="/assets/checkout/targets.png"/>
    <figcaption><em>Clasification Targets </em></figcaption>
  </figure>
 
@@ -48,7 +48,7 @@ In order to classify multiple targets, the class labels had to be one-hot encode
 Ultimately, my network performed at a sub-par accuracy of only about 80% on real-world data. I was very pleased that it reached that level of accuracy, but the standard accuracy for classification tasks is in the mid 90% range for state of the art neural nets.
 
 <figure>
-  <img src="/assets/checkout/chart.png" style="width: 50vw"/>
+  <img src="/assets/checkout/chart.png" />
   <figcaption><em>Training/Test accuracy over multiple epochs </em></figcaption>
 </figure>
 

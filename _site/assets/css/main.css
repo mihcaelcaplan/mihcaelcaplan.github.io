@@ -41,14 +41,14 @@ li { font-size: 2.5vh; }
 
 .floater { border: 2px solid black; border-radius: 3px; text-align: center; box-shadow: 3px 5px rgba(132, 161, 240, 0.5); }
 
-.floater a { font-size: 2.25vh; }
+.floater a { font-size: 2.25vh; margin: 5px; }
 
-.floater p { font-size: 4vh; text-decoration: underline; }
+.floater p { font-size: 4vh; text-decoration: underline; margin: auto; }
 
 @media (min-width: 400px) { .floater { position: fixed; right: 5vw; top: 30%; width: 30%; height: 60%; } }
 
-@media (max-width: 400px) { .content_container { width: 100%; } .floater { position: absolute; width: 85%; height: 15%; left: 10; top: 100; } .project_list { margin-top: 25vh; } }
+@media (max-width: 400px) { .content_container { width: 100%; } .floater { position: absolute; width: 85%; height: min-content; left: 10; top: 100; } .project_list { margin-top: 25vh; } }
 
-@media (max-width: 300px) { .floater { top: 170; } .project_list { margin-top: 28vh; } }
+@media (max-width: 328px) { .floater { top: 170; } .project_list { margin-top: 28vh; } }
 
 /*# sourceMappingURL=main.css.map */

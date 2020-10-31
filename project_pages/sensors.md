@@ -46,14 +46,14 @@ I decided to continue to work in the lab during the fall of my Junior year, and 
 The assembly and testing process was much more difficult than I expected, and I learned a lot about working with surface mount components. We decided not to use a reflow oven, so I spent a lot of time soldering all of the surface mount components using a hot air rework station and solder paste.
 
 <figure>
-  <img src="/assets/sensors/passives.jpg" style="width: 25vw"/>
+  <img src="/assets/sensors/passives.jpg"/>
   <figcaption><em>Board with Passive Components </em></figcaption>
 </figure>
 
 The testing process was especially arduous. I spent almost a week troubleshooting bad sensor readings, only to finally discover that one of my traces from the DAC was shorting out the board, and that a voltage divider had not been designed with the correct values. The first problem was easily solvable by cutting the trace with a utility knife. The second problem was solved by desoldering and resoldering new resistors with the correct values. When the boards finally worked, I was incredibly proud.
 
 <figure>
-  <img src="/assets/sensors/test_setup.jpg" style="width: 25vw"/>
+  <img src="/assets/sensors/test_setup.jpg"/>
   <figcaption><em>Example trial set up with one node</em></figcaption>
 </figure>
 
