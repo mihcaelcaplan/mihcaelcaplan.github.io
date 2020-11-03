@@ -6,6 +6,7 @@
 body{
   font-family: "Courier New", Courier, monospace;
   font-size: 2.25vh;
+  padding: 2vw;
 }
 
 .internal{
@@ -31,6 +32,7 @@ body{
   height: 4vh;
   padding: 0.5vh;
   margin-left: 2%;
+  margin-top: 2%;
   border: thin #C1C1C1 solid;
   box-shadow: 3px 5px rgba(132, 161, 240, 0.5);
 }
@@ -54,6 +56,8 @@ body{
 
 .content{
   padding: 2vw;
+  padding-left: 10vw;
+  padding-right: 10vw;
   margin: 2vw;
 }
 
@@ -76,6 +80,7 @@ figure{
   border-radius: 3px;
   padding: 10px;
   justify-content: center;
+  margin: auto;
 }
 
 figcaption{
@@ -87,4 +92,26 @@ figcaption{
 
 figure img{
   width: 100%
+}
+
+@media (min-width: 1000px) {
+ figure{
+    width: 50%;
+ }
+
+ .content{
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+}
+
+@media (max-width: 1000px) {
+ figure{
+    width: 70%;
+ }
+
+ .content{
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
 }

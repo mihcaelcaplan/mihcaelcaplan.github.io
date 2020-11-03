@@ -19,7 +19,7 @@ I want to make my own Electric Unicycle (EUC), a relatively novel form of electr
 
 Here's a quick video with some good clips in it:
 
-<iframe style="width:85vw; height: 48vw;" src="https://www.youtube.com/embed/LxYWNuwcJjk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe style="width:75vw; height: 48vw; margin: auto;" src="https://www.youtube.com/embed/LxYWNuwcJjk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Fast wheels with bigger tires and higher voltages can get up to ~50MPH, making these the sportbikes of the personal EV world. 
 
