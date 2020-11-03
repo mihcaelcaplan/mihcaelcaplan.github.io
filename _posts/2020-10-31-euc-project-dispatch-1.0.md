@@ -4,7 +4,7 @@ layout: blog_post
 
 ## physical -> digital -> physical -> digital -> physical -> di...
 
-I'm not a mechanical engineer and I don't have that much CAD experience. I learned Autodesk Inventor at a rudimentary level in high school and I forced myself to learn the Fusion 360 in college with hopes of using the CNC lathe/mill in the student machine shop, but alas I never found time before I graduated. 
+I'm not a mechanical engineer and I don't have that much CAD experience. I learned Autodesk Inventor at a rudimentary level in high school and I forced myself to learn Fusion 360 in college with hopes of using the CNC lathe/mill in the student machine shop, but alas I never found time before I graduated. 
 
 Luckily, I begged the managers at the student makerspace where I worked to name me "Monitor of the Month" during my senior year, so that I would recieve a pair of dial calipers that I coveted. You can see them below, as I started to take some measurements for the model I was trying to make.
 
