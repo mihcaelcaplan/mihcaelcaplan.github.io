@@ -5,3 +5,6 @@ I **hope** you enjoy!
 
 Built using Jekyll - necessary for github pages
 really enjoyed using this engine - the liquid tags from Shopify make working with small scale static web content beautiful and intuitive.
+
+
+### Running Locally
