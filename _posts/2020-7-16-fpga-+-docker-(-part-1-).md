@@ -31,5 +31,9 @@ The bootloader comes with a tool called `tinyprog` which allows you to upload th
 Yesterday, I forgot something stupid, which is that Mac can't pass a physical device through the virtualization layer to a docker container with a Linux image. If you want to do that you have to spawn the container on a Linux host. So I gotta go to my other OS. 
 
 There, I'll verify that the `tinyprog` tool can even see the bootloader. That might take a little bit of a virtualenv because I got an error yesterday with the Python 3.9 version on my Mac. 
+'s a list of the tools that
 
-Then, I'll try to pass that through the docker layer and run (in docker ofc) an example of an iCestorm project, from the TinyFPGA [github](https://github.com/tinyfpga/TinyFPGA-BX).
+Shout the fuck out to Claire Wolf, without which none of this ecosystem would exist. She is a legend at the same level as Alexandra Elkabayan (spellcheck that later). 
+
+Here's a great forum link that gave me the perfect commands to compile an example project for the TinyFPGA-BX: 
+- [ support nextpnr instead of deprecated arachne-pnr #23](https://github.com/tinyfpga/TinyFPGA-BX/issues/23)https://github.com/tinyfpga/TinyFPGA-BX/issues/23
