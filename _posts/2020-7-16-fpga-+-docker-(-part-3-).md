@@ -23,8 +23,11 @@ I hope to get some better resources, and it would be fun to write up a bit on wh
 Overall, I'm still fucked with fpga stuff. The ecosystem is so foreign. I feel like I'm back at the stage of C/C++ programming where you don't know what an #include or #define command does. I got the reference design for this ADC implemenation, and I will embed the file under here so you can take a look. 
 
 <figure>
-  <img src="https://www.latticesemi.com/view_document?document_id=35762"/>
+  <pdf src="/assets/blog/2020-7-16-fpga-+-docker-(-part-3-)/lattice.pdf"/>
   <!-- <figcaption><em> yessir</em></figcaption> -->
 </figure>
 
+
+
+<object style="width: 85vw; height: 85vh;" data="https://www.latticesemi.com/view_document?document_id=35762"></object>
 
