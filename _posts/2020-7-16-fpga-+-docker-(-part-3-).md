@@ -24,7 +24,7 @@ Overall, I'm still fucked with fpga stuff. The ecosystem is so foreign. I feel l
 
 <!-- <figure>
   <pdf src="/assets/blog/2020-7-16-fpga-+-docker-(-part-3-)/lattice.pdf"/>
-  <!-- <figcaption><em> yessir</em></figcaption> -->
+  <figcaption><em> yessir</em></figcaption>
 </figure> -->
 
 
