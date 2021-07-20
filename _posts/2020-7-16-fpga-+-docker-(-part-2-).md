@@ -19,7 +19,8 @@ The toolchain is pretty complex for this shit, so I'm not surprised that FPGA is
 Shout the fuck out to Claire Wolf, without which none of this ecosystem would exist. She is a legend at the same level as Alexandra Elkabayan (spellcheck that later). 
 
 Here's a great forum link that gave me the perfect commands to compile an example project for the TinyFPGA-BX: 
-- [ support nextpnr instead of deprecated arachne-pnr #23](https://github.com/tinyfpga/TinyFPGA-BX/issues/23)https://github.com/tinyfpga/TinyFPGA-BX/issues/23
+- [support nextpnr instead of deprecated arachne-pnr #23](https://github.com/tinyfpga/TinyFPGA-BX/issues/23)
+
 
 The Yosys utilities: 
 - Yosys
