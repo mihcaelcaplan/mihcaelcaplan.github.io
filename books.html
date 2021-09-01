@@ -1,0 +1,23 @@
+---
+title: Reading List
+layout: blog_post
+---
+
+Some books I found important enough to write down.
+<br></br>
+
+  <table>
+    <tr>
+      <th style="font-size:2vh;">Title</th>
+      <th style="font-size:2vh;">Author</th>
+      <th style="font-size:2vh;">Description</th>
+      <td bgcolor="#FFFFFF" style="line-height:5vh;" colspan=3>&nbsp;</td>
+
+    {% for book in site.data.books %}
+    <tr>
+        <td>{{book.name}}</td>
+        <td><em>{{book.author}}</em></td>
+        <td>{{book.desc}}</td>
+    </tr>
+    {% endfor %}
+  </table>

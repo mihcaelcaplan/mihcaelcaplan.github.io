@@ -39,11 +39,11 @@ h3 { font-size: 3vh; }
 
 li { font-size: 2.5vh; }
 
-.floater { border: 2px solid black; border-radius: 3px; text-align: center; box-shadow: 3px 5px rgba(132, 161, 240, 0.5); }
+.floater { border: 2px solid black; border-radius: 3px; text-align: center; box-shadow: 3px 5px rgba(132, 161, 240, 0.5); display: flex; flex-flow: column; }
 
 .floater a { font-size: 2.25vh; margin: 5px; }
 
-.floater p { font-size: 4vh; text-decoration: underline; margin: auto; }
+.floater p { font-size: 4vh; text-decoration: underline; margin: 10px; }
 
 @media (min-width: 400px) { .floater { position: fixed; right: 5vw; top: 30%; width: 30%; height: 60%; } }
 

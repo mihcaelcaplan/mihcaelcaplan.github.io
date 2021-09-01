@@ -4,9 +4,6 @@
 @import "see_more";
 @import "nav";
 
-
-
-
 body{
   font-family: "Courier New", Courier, monospace;
   padding: 15px;
@@ -74,7 +71,8 @@ li{
   border-radius: 3px;
   text-align: center;
   box-shadow: 3px 5px rgba(132, 161, 240, 0.5);
-
+  display: flex; 
+  flex-flow: column;
 }
 
 .floater a{
@@ -86,7 +84,7 @@ li{
 .floater p{
   font-size: 4vh;
   text-decoration: underline;
-  margin: auto;
+  margin: 10px;
 
 }
 
