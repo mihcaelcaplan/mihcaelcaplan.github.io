@@ -120,6 +120,14 @@ figure img{
   padding-left: 10vw;
   padding-right: 10vw;
 }
+
+video{
+  height: 80vh;
+  width: 45vw;
+  object-fit:cover;
+}
+
+
 }
 
 @media (max-width: 1000px) {
@@ -131,4 +139,11 @@ figure img{
   padding-left: 2vw;
   padding-right: 2vw;
 }
+
+video{
+  height: 70vh;
+  width: 80vw;
+  object-fit:cover;
+}
+
 }
