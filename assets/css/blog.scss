@@ -75,6 +75,23 @@ audio{
   width: 60vw;
 }
 
+video{
+  height: 80vh;
+  width: 45vw;
+  object-fit:cover;
+}
+
+.note{
+  border-radius: 4px;
+  outline-color: grey;
+  outline-style: solid;
+  outline-width: 1px;
+  margin: 20px;
+  padding: 10px;
+  font-style: italic;
+  font-size:smaller;
+}
+
 figure{
   border: thin #C1C1C1 solid;
   border-radius: 3px;
