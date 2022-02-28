@@ -15,9 +15,9 @@ Your browser does not support the video tag.
 
 _Michael Caplan_ 
 
-_2/25/2021_
+_2/25/2022_
 
-A collage of videos, mostly from people's phones, taken during an invasion into Ukraine by Russian military force. It was compiled on the night of Jan 24, at the end of the first day of military action. If the gulf war was made for TV, this one was made for social media. 
+A collage of videos, mostly from people's phones, taken during an invasion into Ukraine by Russian military force. It was compiled on the night of February 24, at the end of the first day of military action. If the gulf war was made for TV, this one was made for social media. 
 
 The rhythm and pacing represents the interior experience of obsessively refreshing social media channels dedicated to disseminating conflict footage and information. Revulsion and fascination.
 
