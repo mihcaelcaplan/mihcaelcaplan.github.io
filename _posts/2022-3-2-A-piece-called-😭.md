@@ -9,7 +9,7 @@ Note: this piece works best in fullscreen with headphones.
 </div>
 
 <video width="100%" height="65%" controls>
-  <source src="https://d2kk7gehsialrv.cloudfront.net/main2.mp4" type="video/mp4">
+  <source src="https://d2kk7gehsialrv.cloudfront.net/main2_size.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
 
