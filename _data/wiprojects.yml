@@ -8,17 +8,17 @@
   brief: "E-bike: the hard way"
   url: ebike.html
 
-- name: EUC
-  category: engineering
-  brief: Electrical Unicycles
-  url: euc.html
+# - name: EUC
+#   category: engineering
+#   brief: Electrical Unicycles
+#   url: euc.html
 
-- name: AFM
-  category: engineering
-  brief: Atomic Force Microscope?
-  url: afm.html
+# - name: AFM
+#   category: engineering
+#   brief: Atomic Force Microscope?
+#   url: afm.html
 
-- name: TinyFPGA
-  category: engineering
-  brief: TinyFPGA experiments
-  url: tinyfpga.html
+# - name: TinyFPGA
+#   category: engineering
+#   brief: TinyFPGA experiments
+#   url: tinyfpga.html
