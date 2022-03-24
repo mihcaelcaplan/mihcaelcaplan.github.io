@@ -1,3 +1,16 @@
+- name: A Study of the Toyota Production System (Produce What Is Needed, When It's Needed)
+  author: Shigeo Shingo, Andrew P. Dillon
+  desc: An in depth study of the industrial engineering concepts and logic behind the Toyota Production System. The author was the technical point person for the development of some truly amazing techniques in production. This book changed how I view making stuff, and rehabilitated hope in the industrial mode of production.
+
+- name: Signal and Power Integrity
+  author: Eric Bogatin
+  desc: The best electrical engineering text. Long and full of wonderful language, it helps you to build intuition about the basic physical processes that underly design decisions. For anyone who will ever need to design a circuit board, I recommend reading at least the first chapters of this book. 
+
+- name: Foundations of Mechanical Accuracy
+  author: Wayne R. Moore
+  desc: If you like machine tools, read this book. The author, a principal at the Connecticut based Moore Tool and Die company, talks about the fundamentals of making things straight. The techniques are ingeniously simple, developed before computers, but incredibly complex and specialized. 
+
+
 - name: Intelligence and Spirit
   author: Reza Negarestani
   desc: Reza's smash succesor to Cyclonopedia. I really like this book, but maybe because I have a kink for not understanding what I'm reading. 
@@ -11,7 +24,7 @@
   desc: One of the first books I read that approached its subject matter with what you could call a "systems" perspective. Very accessible and will introduce you to valuable analogical tools like autocatalysis, or chemical systems far from equilibrium. 
 
 - name: "Technics and Time, 1: The Fault of Epimetheus"
-  author: Bernard Stiegler
+  author: Bernard Stieglerthe
   desc: Fantastically written, makes you think about technology in an unfamiliar way. The classical allusions went over my head like usual, but overall very good book to elicit insights. 
   
 - name: The Ant Trap

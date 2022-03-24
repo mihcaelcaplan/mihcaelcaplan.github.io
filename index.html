@@ -7,7 +7,13 @@ title: Michael Caplan
     <meta charset="utf-8">
     <link rel="stylesheet" href="/assets/css/main.css"/>
     <script src="script.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icon/favicon-16x16.png">
+    <link rel="manifest" href="assets/icon/site.webmanifest">
+
     <title>{{page.title}}</title>
+
   </head>
   <body>
     <canvas id="background"></canvas>
@@ -20,20 +26,27 @@ title: Michael Caplan
         <!-- set up the main projects body -->
         <div class=project_list>
 
-          <h3>(we)blog posts</h3>
+          <h3>blog posts</h3>
           <ul>
-            {% for post in site.posts %}
+            {% for post in site.posts limit:5 %}
               <li>
                 <a href="{{ post.url }}">{{ post.title }}</a>
               </li>
             {% endfor %}
           </ul>
+            <a href="posts.html">... See all posts</a>
 
+          <h3>works in-progress</h3>
+          <ul id="projects">
+          {% for project in site.data.wiprojects %}
+              <li><a href={{project.url}}>{{ project.brief }}</a></li>
+          {% endfor %}
+        </ul>
 
           <!-- use liquid to loop through all projects in projects data structure -->
-          <h3>some (portfolio) projects</h3>
+          <h3>older projects</h3>
           <ul id="projects">
-          {% for project in site.data.projects %}
+          {% for project in site.data.oldprojects %}
               <!-- {% capture name %} {{ project.brief }} {% endcapture %}
               {% capture image %} {{project.image}}{% endcapture %}
               {% capture proj_url %} {{ project.url }} {% endcapture %}
@@ -45,9 +58,9 @@ title: Michael Caplan
 
       <div class='floater'>
         <p>links</p>
-        <a href="https://www.google.com">search web 🔎</a>
-        <a href="books.html">reading list 📚</a>
-        <a href="ideas.html">big idea board ♠️</a>
+        <a href="https://www.google.com">search web 🔎 </a>
+        <a href="books.html">reading list 📚 </a>
+        <a href="ideas.html">big idea board ♠️ </a>
         <a href=""></a>
       </div>
 
