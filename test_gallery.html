@@ -1,8 +1,86 @@
 <script>
 
+    // function to toggle images between gallery and fullscreen
+     gallerize = (imgboxes,i) => {
+      // if box is clicked, need to check if it is min or max
+      clickedbox = imgboxes[i]
+    //   clickedcard = clickedbox.querySelector(".img-card")
+    //   gallery = document.querySelector(".image-gallery")
+    //   gallerypos = gallery.getBoundingClientRect();
+    
+      // check state
+      s_minimized  = clickedbox.classList.contains("min")?true:false
+      
+      if(s_minimized){
+        
+        // hide all except i
+        imgboxes.forEach((box, j)=>{ 
+          if(i!=j){
+            box.style.visibility = "hidden"
+          }
+        })
+        
+        // allow the img to expand (a little hacky)
+        // clickedcard.style.height = "75vh"
+        // clickedcard.style.width = "75vw"
+    
+        // set pos
+        // clickedcard.style.right = clickedcard.getBoundingClientRect().right
+        // clickedcard.style.left = clickedcard.getBoundingClientRect().left
+        
+        // maximize by changing tag and letting css pick up
+        // clickedbox.classList.remove("min")
+        // clickedbox.classList.add("max")
+        clickedbox.classList.remove("min")
+        clickedbox.classList.add("max")
+    
+        
+      }
+      else{
+        console.log("else")
+        // show all 
+        imgboxes.forEach((box,k)=>{
+          console.log("making vis", k)
+          box.style.visibility = "visible"
+        });   
+    
+        // push the image back into a grid size
+        // clickedcard.style.height = "20vh"
+        // clickedcard.style.width = "90%"
+    
+        // clickedcard.style.top = null
+        // clickedcard.style.left = null
+    
+          
+        // minimize by getting rid of tag
+        clickedbox.classList.remove("max")
+        clickedbox.classList.add("min")
+      }
+      
+     }
+
+     //  main logic
+  window.onload = ()=>{
+    let imgboxes = document.querySelectorAll(".photo")
+    
+    imgboxes.forEach((box, i) => {
+      // add a click listener to each
+      box.addEventListener("click", ()=>{gallerize(imgboxes,i)});
+      // assume they are in min state and add a class to save state
+      box.classList.add("min")
+    });
+  }
 </script>
 
 <style>
+    /* style for gallery logic */
+
+    .max{
+        
+
+    }
+
+    /* styles */
     .wrapper{
         background-color: green;
     }
