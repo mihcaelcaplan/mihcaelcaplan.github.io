@@ -49,6 +49,16 @@ I knew that I wanted to use recycled batteries. I bought a lot of cells from a u
   <figcaption><em> Tearing out the management circuit.</em></figcaption>
 </figure>
 
+The batteries all got tested for voltage, and categorized by cells that had probably retained good capacity, and those that had self-drained over time. 
+
+From there, I ordered a plastic EBike battery case to arrange the cells. 
+
+### KWeld
+When I was interested in this previously, I ordered a spot welder kit from a company that made small, assemble-it-yourself machines. 
+Check out the KWeld [here](https://www.keenlab.de/index.php/product/kweld-complete-kit/).
+
+This will allow me to weld nickel strips on to the surface of the battery cells. These will serve as the wiring that carries energy from each individual cell out to the motor.git 
+
 
 ## The controller (VESC)
 Searching for a low cost, flexible motor controller, I came across an open source project by a single engineer. 
