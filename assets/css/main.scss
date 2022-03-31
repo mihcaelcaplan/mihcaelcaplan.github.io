@@ -88,6 +88,13 @@ li{
 
 }
 
+.floater div{
+  font-size: 2.25vh;
+  text-decoration: underline;
+  margin: 5px;
+
+}
+
 @media(min-width: 400px){
   .floater{
     position: fixed;

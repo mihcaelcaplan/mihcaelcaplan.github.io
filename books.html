@@ -2,22 +2,42 @@
 title: Reading List
 layout: blog_post
 ---
+<style>
+.name{
+  font-size: large;
+}
+.author{
+  font-size: large;
+}
+.desc{
+  font-size: large;
+}
+.book{
+  border-spacing: 100px;
+}
+
+
+
+</style>
+
 
 Some books I found important enough to write down.
 <br></br>
 
   <table>
+    <!-- header row -->
     <tr>
       <th style="font-size:2vh;">Title</th>
       <th style="font-size:2vh;">Author</th>
       <th style="font-size:2vh;">Description</th>
       <td bgcolor="#FFFFFF" style="line-height:5vh;" colspan=3>&nbsp;</td>
 
+    <!-- loop through books and make a row -->
     {% for book in site.data.books %}
-    <tr>
-        <td>{{book.name}}</td>
-        <td><em>{{book.author}}</em></td>
-        <td>{{book.desc}}</td>
+    <tr class="book">
+        <td class="name">{{book.name}}</td>
+        <td class="author"><em>{{book.author}}</em></td>
+        <td class="desc">{{book.desc}}</td>
     </tr>
     {% endfor %}
   </table>

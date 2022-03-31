@@ -1,0 +1,226 @@
+<!-- 
+sets out a module for a reusable gallery with generic image containers that
+    a) when clicked, show the user only that image in better detail
+    b) keep the image in bounds of the gallery display size
+    c) hide all the other images
+
+-->
+
+
+<script>
+
+    // function to toggle images between gallery and fullscreen
+    gallerize = (imgboxes,i) => {
+        clickedbox = imgboxes[i]
+        gallery = document.querySelector(".gallery")
+        wrapper = document.querySelector(".wrapper")
+
+        // hide all 
+        imgboxes.forEach((box,k)=>{
+          console.log("making vis", k)
+          box.style.visibility = "hidden"
+        });   
+
+        // clone node and append children
+        maxbox = clickedbox.cloneNode()
+        clickedbox.childNodes.forEach(child=>{
+            newchild = child.cloneNode()
+            maxbox.appendChild(newchild)
+        })
+        
+        // add an onclick listener to delete itself and show everything else
+        maxbox.addEventListener("click",()=>{
+            // show all imgs
+            imgboxes.forEach((box,k)=>{
+                console.log("making vis", k)
+                box.style.visibility = "visible"
+            });   
+            maxbox.remove()
+        })
+        
+        // style and add class to have css pick up
+        maxbox.style.visibility = "visible"
+        maxbox.classList.add("max")
+        maxbox.classList.remove("photo")
+        
+        wrapper.insertBefore(maxbox,gallery)
+    
+    
+     }
+
+     //  main logic
+  window.onload = ()=>{
+    let imgboxes = document.querySelectorAll(".photo")
+    
+    imgboxes.forEach((box, i) => {
+      // add a click listener to each
+      box.addEventListener("click", ()=>{gallerize(imgboxes,i)});
+      // assume they are in min state and add a class to save state
+    //   box.classList.add("min")
+    });
+  }
+</script>
+
+<style>
+    /* style for gallery logic */
+
+    .max > img{
+        position: relative; 
+        top: 0;
+        bottom: 0;
+        margin: auto; 
+    }
+
+    .max{
+        position: fixed;
+        top: 0;
+        left: 0;
+       
+        background-color: rgba(0, 0, 0, 0.8);
+       
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* styles */
+
+    img{
+        object-fit: cover;
+        max-width:100%;
+        max-height:100%;
+        
+        border-radius: 5px;
+
+    }
+    /* pop on hover */
+    .gallery img:hover{
+            transform: scale(1.05);
+    }
+    .wrapper{
+        background-color: rgb(216, 216, 221);
+        margin: 20px;
+        border-radius: 5px;
+        border: thin #C1C1C1 solid;
+
+    }
+
+    .gallery{
+        display: grid;
+        justify-items: center;
+        padding-top: 90px;
+        /* padding-left: 50px;
+        padding-right: 50px; */
+    }
+
+    .photo{
+        display: flex;
+        justify-content: center;
+        
+
+    }
+
+    .caption{
+        padding: 10px;
+        margin: 10px;
+    }
+
+    /* media breakpoints to make gallery mobile friendly */
+    @media(min-width: 1000px){ 
+        .gallery{
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-auto-rows: 300px;
+            row-gap: 2vh;
+            column-gap: 2vw;
+
+        }
+
+        .photo{
+            width: 200px;
+            height: 300px;
+        } 
+    }
+
+    @media(max-width: 1000px){ 
+        .gallery{
+            grid-template-columns: repeat(2, minmax(50px,1fr));
+            grid-auto-rows: none;
+            row-gap: 3vh;
+            /* column-gap: 2vw; */
+        }
+
+        .photo{
+            width: 30vw;
+            height: 40vw;
+        } 
+    }
+    
+   
+    
+
+
+
+</style>
+
+<!-- <head>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="gallery">
+                <div class="photo">
+                    <img src="assets/images/discover.png"></img>
+                </div>
+                <div class="photo">
+                    <img src="assets/lampz/backlit.jpeg"></img>
+                </div>
+                <div class="photo">
+                    <img src="assets/blog/2020-12-31-spinning up!/spinning.gif"></img>
+                </div>
+                <div class="photo"></div>
+                <div class="photo"></div>
+                <div class="photo"></div>
+                <div class="photo"></div>
+                <div class="photo"></div>
+                <div class="photo"></div>
+                <div class="photo"></div>
+                <div class="photo">
+                    <img src="assets/lampz/backlit.jpeg"></img>
+                </div>
+                <div class="photo"></div>
+               
+        </div>
+
+    </div>
+    
+    
+</body> -->
+
+
+<!-- from  https://dmnfarrell.github.io/software/jekyll-galleries -->
+<div class="wrapper"> 
+    <div class ="gallery">
+        {% assign sorted = site.static_files | sort: 'name'  %}
+        {% for file in sorted %}
+        {% if file.path contains include.folder %}
+        {% if file.extname =='.png' or file.extname =='.jpg' or file.extname =='.jpeg'}
+          {% assign filenameparts = file.path | split: "/" %}
+            {% assign filename = filenameparts | last | replace: file.extname,"" %}
+             <!--photo card  -->
+            <div class="photo">
+               <!--link to the photo with a thumbnail image in the link  -->
+              <!-- <a href="{{ file.path | relative_url }}" title="{{ filename }}"> -->
+               <img src="{{ file.path | relative_url }} " alt="{{ filename }}"  class="img-card" />
+             <!-- </a> -->
+            </div>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+    
+      </div>
+    <div class="caption">{{include.caption}}</div>
+    </div>
+    

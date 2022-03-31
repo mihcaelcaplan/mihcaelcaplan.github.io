@@ -1,36 +1,139 @@
-<!-- https://dmnfarrell.github.io/software/jekyll-galleries -->
 <style>
-.image-gallery {
+  /* need to put media breakpoints on this to mess with grid */
+  .gallery-wrapper{
+    background-color: rgb(216, 216, 221);
+    border-radius: 3px;
+    padding: 10px;
+  }
+  caption{
+    text-align: center;
+    margin: 10px;
+  }
+  .image-gallery {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill,minmax(25vw, 1fr));
     justify-content: center;
     padding: 4px;
   }
 
   .box {
-      flex-basis: 25%;
-      width: 100%;
-      padding: 10px;
-      margin: 2px;
+    flex-basis: 25%;
+    width: 100%;
+    padding: 10px;
+    margin: 2px;
   }
 
-  .img-gallery {
-	width: 90%;
-  height: 200px;
-	object-fit: cover;
-  transform: scale(1);
-  transition: all 0.3s ease-in-out;
-  &:hover {
+  .img-card {
+    /* position:relative; */
+    width: 90%;
+    height: 20vh;
+    object-fit: cover;
+    border-radius: 3px;
+    margin: auto;
+    /* transform: scale(1); */
+}
+
+.img-card:hover {
+    /* transition: all 0.3s; */
     transform: scale(1.05);
   }
-}
+
+  .img-card:click {
+    transition: none;
+    /* transform: scale(1.05); */
+  }
+
+  .max {
+    position: absolute;
+    /* width: 100%; */
+    /* margin-left: auto;
+    margin-right: auto; */
+    
+  }
 </style>
 
+<script>
+
+// function to toggle images between gallery and fullscreen
+ gallerize = (imgboxes,i) => {
+  // if box is clicked, need to check if it is min or max
+  clickedbox = imgboxes[i]
+  clickedcard = clickedbox.querySelector(".img-card")
+  gallery = document.querySelector(".image-gallery")
+  gallerypos = gallery.getBoundingClientRect();
+
+  // check state
+  s_minimized  = clickedbox.classList.contains("min")?true:false
+  
+  if(s_minimized){
+    
+    // hide all except i
+    imgboxes.forEach((box, j)=>{ 
+      if(i!=j){
+        box.style.visibility = "hidden"
+      }
+    })
+    
+    // allow the img to expand (a little hacky)
+    clickedcard.style.height = "75vh"
+    clickedcard.style.width = "75vw"
+
+    // set pos
+    // clickedcard.style.right = clickedcard.getBoundingClientRect().right
+    // clickedcard.style.left = clickedcard.getBoundingClientRect().left
+    
+    // maximize by changing tag and letting css pick up
+    // clickedbox.classList.remove("min")
+    // clickedbox.classList.add("max")
+    clickedbox.classList.remove("min")
+    clickedbox.classList.add("max")
+
+    
+  }
+  else{
+    console.log("else")
+    // show all 
+    imgboxes.forEach((box,k)=>{
+      console.log("making vis", k)
+      box.style.visibility = "visible"
+    });   
+
+    // push the image back into a grid size
+    clickedcard.style.height = "20vh"
+    clickedcard.style.width = "90%"
+
+    // clickedcard.style.top = null
+    // clickedcard.style.left = null
+
+      
+    // minimize by getting rid of tag
+    clickedbox.classList.remove("max")
+    clickedbox.classList.add("min")
+  }
+  
+ }
+
+//  main logic
+  window.onload = ()=>{
+    let imgboxes = document.querySelectorAll(".box")
+    
+    imgboxes.forEach((box, i) => {
+      // add a click listener to each
+      box.addEventListener("click", ()=>{gallerize(imgboxes,i)});
+      // assume they are in min state and add a class to save state
+      box.classList.add("min")
+    });
+  }
+  
+</script>
 
 
+
+<!-- from  https://dmnfarrell.github.io/software/jekyll-galleries -->
+<div class="gallery-wrapper"> 
 <div class ="image-gallery">
-    {% assign sorted = site.static_files | sort: 'date' | reverse %}
+    {% assign sorted = site.static_files | sort: 'name'  %}
     {% for file in sorted %}
     {% if file.path contains include.folder %}
     {% if file.extname =='.png' or file.extname =='.jpg' or file.extname =='.jpeg'}
@@ -39,12 +142,14 @@
          <!--photo card  -->
         <div class="box">
            <!--link to the photo with a thumbnail image in the link  -->
-          <a href="{{ file.path | relative_url }}" title="{{ filename }}">
-           <img src="{{ file.path | relative_url }} " alt="{{ filename }}"  class="img-gallery" />
-         </a>
+          <!-- <a href="{{ file.path | relative_url }}" title="{{ filename }}"> -->
+           <img src="{{ file.path | relative_url }} " alt="{{ filename }}"  class="img-card" />
+         <!-- </a> -->
         </div>
         {% endif %}
       {% endif %}
     {% endfor %}
-   </div>
 
+  </div>
+<caption>{{include.caption}}</caption>
+</div>
