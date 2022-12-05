@@ -3,13 +3,22 @@ layout: blog_post
 ---
 
 Sunset over the water
+
 Slipping down the east coast 
+
 Stopping regionally in Rhode Island and Connecticut before arriving in New York
+
 At the new station, half heartedly connected to the old
+
 In the middle of constant construction
+
 I anticipate a contrast between the 
+
 muted grey blue pink purple yellow orange sunset, and the
+
 buzzy sharp white LED station lighting that I will step into 
+
+
 
 Slipping in and out of a light late afternoon sleep reading MIL-STD-1629A
 Environments: The conditions, circumstances, influences, stresses and combinations thereof, surrounding and affecting systems or equipment during storage, handling, transportation, testing, installation, and use in standby status and mission operation.
